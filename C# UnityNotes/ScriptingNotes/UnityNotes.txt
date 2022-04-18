@@ -1,0 +1,79 @@
+UNITY's UI consists of main views:
+* Scene View - this is where you will able to arrange your 3D assests for each scene or level in your project.
+* Game View - this is where you will interact with your scene at runtime to test your game play.
+* Hierarchy View - this is where you will find the objects that are currently in the loaded scene or level.
+* Inspector View - this is where you will have access to the parameters, options, and other particulars of selected assets.
+* Project View - this contains the resources or assets available to the current project.
+* Navigation Controls - that will allow you to move and arrange objects in your scene and re-orient the Scene view itself for easier 
+access to the various objects.
+* Coordinates System Options - you can specify Global or Local coordinates as well as using the object’s designated Pivot Point 
+or the Center of its bounding box as the rotation point.
+* Playback buttons - where you can test your game’s functionality
+* Drop-Down Menus - Layers drop-down menu will allow you to set various Layers to be active or inactive during Play mode, or define new layers. 
+Layout drop-down menu provides a quick way to switch between several popular layout configurations.
+
+Two main options to view the scene:
+* Perspective Mode - where objects farther back in the scene appear smaller. You can view in any perspective view
+* Isometric Mode - is a view often used in drafting to create a 3D view without the vanishing point perspective of the human eye. Flat view.
+
+Pivot - the center point of an object on how they transform. (the small point on the object)
+Position Gizmo - it has the color scheme of RGB that controls the position of the object. (lines around the object when it clicked).
+Scene Gizmo - is in the upper-right corner of the Scene view. The Scene Gizmo has a conical arm on each side of the cube. This displays the Scene view 
+Camera’s current orientation, and allows you to quickly modify the viewing angle and projection mode.
+Viewport - The main camera renders everything that it sees or “captures” in a specific region. Everything that comes into this region becomes visible for the player.
+
+Spaces:
+* Global Space - each scene in Unity comes with its own coordinate system; global coordinates system. It does not change. i.e. origin, rotation and unit scale.
+* Local Space - each gameobject in Unity comes with its own coordinate system; based on the object's position, rotation and scale its local space changes.
+
+Types of GameObject:
+* Primitive - by definition, an object that can be defined by a set of parameters. Some examples of primitives are sphere, cube, capsule, and cylinder. (Shapes)
+* Mesh - When an object cannot be described by a set of parameters, it is called a “mesh”. A mesh is a collection of vertices, edges, and faces that are used 
+to build the object in 3D space. (Pre-shapes)
+* GameObject- anything that is put in your scene or level is called a GameObject specifically refers to an object that 
+inherits from the GameObject class, that is the code that defines the top-level object and its basic behavior.
+* Assets - can be anything from textures and materials to meshes, scripts, and physics-related components.
+* Components - are the building blocks that specify the functionality for every gameObject. This are combined and manipulated to bring objects to life. 
+* Sprites - A sprite is a bitmap graphic that is designed to be part of a larger scene. It can either be a static image or an animated graphic.
+* Animation Sprite Sheet - is an image which consists of multiple frames of an animation. It can create the illusion of movement by rendering frames in quick 
+succession, like in cartoons.
+* Prefab - acts basically as a template that you use to create new instances of the same object in the scene.
+(You can create your own Prefab and save it as gameObject then save this on your assets and create instances of it).
+* State Machine - can change from one state to another in response to some external inputs; this is called transition.
+* Shader - is a program that defines how every single pixel is drawn on-screen.
+* Material - is a file that contains information about the lighting of an object with that material.
+
+Components:
+* Renderer - Responsible for rendering and making objects visible.
+* Collider - Define the physical collision boundaries for objects.
+* Rigidbody - Gives an object real-time physics properties such as weight and gravity.
+* Audio Source - Gives object properties to play and store sound.
+* Audio Listener - The component that actually “hears” audio and outputs it to the player’s speakers. By default, one exists in the main camera.
+* Animator - Gives an object access to the animation system.
+* Light - Makes the object behave as a light source, with a variety of different effects.
+
+Specific Components:
+* Transform Component - all gameObject have this component. This is an object’s scale, orientation, and location in space.
+* Mesh Filter Component - is what holds the 3D mesh for the gameObject. 
+* Mesh Renderer Component - Each primitive objects has this components. This component is what causes the object (whose mesh is found in the Mesh Filter component) 
+to be “rendered” or drawn into the Scene view. (Actual surface of the object)
+* Sprite Renderer - this component displays images that have been imported as the sprite type for use in both 2D and 3D scenes.
+* Collider Components - have two main types of functionality. The default is to block physics-based objects from going through the volume
+defined by the Collider component. The second, when the collider’s Is Trigger parameter is checked, is to allow objects to pass through the object 
+but to register the event for further evaluation and possible action.
+
+In 2D Design Transform Component:
+You can only position the object with X and Y coordinates.
+You can only rotate the object by its Z coordinates.
+In scale, the size of the object dependent on the sprites when imported.
+
+
+Prototyping - This process can give you a very clear idea of what your game will look like, and allow you to save time further down the road, 
+and to show other people what the game will look like.
+Time.deltaTime - real time when the game starts.
+
+to see the axes available go to Edit > Project Settings > Input
+
+
+* IsTrigger - are colliders that are capable of executing script when a collider touches the trigger, exits the trigger, or while the collider touches the trigger via 
+OnTriggerEnter, OnTriggerExit, or OnTriggerStay. You also optionally have access to the collider that touched your trigger.

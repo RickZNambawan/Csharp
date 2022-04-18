@@ -1,0 +1,13 @@
+1. Look for the object with animation you want to animate with transition.
+2. Go to Animator Window from Window Menu.
+3. Drag all the animation you want to include to your object.
+4. Next, go to the Parameters tab in Animator Window then specify the parameter that cause the animation to transition to another animation.
+5. Go again to Animator Window and right-click to the current animation and choose "Make Transition" and click the arrow to the next animation.
+6. Uncheck the "Has Exit Time", uncheck "Fixed Duration", change the "Transition Duration" to 0.
+7. In the "Conditions", click add and specify the parameter you want and the logical condition.
+8. You can close the Animator Window if you satisfy with your transition.
+9. Then, next is to create Script component for the object.
+10. In your script, create a reference property for the animator component to get the functionality of the animator class.
+11. In Update() method, type "variableNameOfYourAnimatorClass.SetFloatOrWhatEverTheDataType("NameOfTheParameter", Input.GetAxisRaw("Horizontal));"
+12. Lastly, drag the Animator Component to the script animator reference property.
+13. Done.

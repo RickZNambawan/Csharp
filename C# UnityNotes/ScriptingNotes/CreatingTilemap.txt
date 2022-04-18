@@ -1,0 +1,6 @@
+1. Hierarchy View > 2D Object > Tilemap.
+2. Window Menu > 2D > Tile Palette.
+3. On Tile Palette Tab, create a new palette.
+4. Drag the tile/ sprite / sprite texture on tile palette tab.
+5. Drag the tiles.
+6. Done.

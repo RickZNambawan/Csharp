@@ -1,0 +1,4 @@
+1. Select all the objects you want to include in your prefab file.
+2. Create parent object and insert all the objects you selected.
+3. Drag the parent object onto project view.
+4. Done.

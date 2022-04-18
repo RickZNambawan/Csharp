@@ -1,0 +1,9 @@
+1. Look for sprites (not yet sliced).
+2. Go to inspector of the sprites, choose "Multiple" in Sprite Mode and "None" in Compression then click apply.
+3. Next, click "Sprite Editor" and sliced all the sprites.
+4. Find the sprite (sliced) in the project view and drag all the sprites in the Scene View (or Hierarchy View) and then save your animation in other folder.
+5. Delete the object in your scene and find the animation in your project view.
+6. After that, open the Animation Window in Window Menu.
+7. Look for the animation in the project view and drag it on the Animation window and edit the "Sample".
+8. Lastly, put the animation in your player object and put a single sprite in the Sprite Renderer Component.
+9. Done.
